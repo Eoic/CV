@@ -24,6 +24,9 @@
 % Entry layout macro.
 \newcommand{\entry}[3]{\noindent\textbf{#1} — #2\hfill #3\\}
 
+% Tech stack macro for projects
+\newcommand{\techstack}[1]{\textcolor{black!70}{\small\textit{#1}}}
+
 % Personal details.
 \newcommand{\Name}{Karolis Strazdas}
 \newcommand{\Email}{karolis.strazdas@pm.me}
@@ -78,10 +81,14 @@ Full-stack software engineer with 5+ years of experience building web applicatio
 
 \section*{Selected projects}
 \begin{itemize}[leftmargin=*,itemsep=0.08em,topsep=0.08em]
-  \item \textbf{Papyrus} — Cross-platform e-book management system.\\\url{https://github.com/Eoic/Papyrus}
-  \item \textbf{Canopy} — Real-time spatial conversation platform.\\\url{https://github.com/Eoic/Canopy}
-  \item \textbf{ASCIIGround} — TypeScript library for animated character backgrounds.\\\url{https://github.com/Eoic/ASCIIGround}
-  \item \textbf{NetBots} — Real-time multiplayer robot programming game.\\\url{https://github.com/Eoic/NetBots}
+  \item \textbf{Papyrus} — Cross-platform e-book management system.\\
+        \techstack{Python, Dart, Flutter, FastAPI, PostgreSQL} | \url{https://github.com/Eoic/Papyrus}
+  \item \textbf{Canopy} — Real-time spatial conversation platform.\\
+        \techstack{Python, TypeScript, Pixi.js} | \url{https://github.com/Eoic/Canopy}
+  \item \textbf{ASCIIGround} — TypeScript library for animated character backgrounds.\\
+        \techstack{TypeScript} | \url{https://github.com/Eoic/ASCIIGround}
+  \item \textbf{NetBots} — Real-time multiplayer robot programming game.\\
+        \techstack{TypeScript, Python, Rust, MongoDB} | \url{https://github.com/Eoic/NetBots}
   \item More projects: \url{https://karolis-strazdas.lt}
 \end{itemize}
 
