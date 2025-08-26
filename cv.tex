@@ -1,0 +1,94 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% Layout and styling.
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+% Spacing.
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.1em}
+\setlist[itemize]{itemsep=0.08em,topsep=0.08em,left=1.2em}
+
+% Section styling.
+\newcommand{\sectionseparator}{\vspace{-0.5em}\noindent\color{black!20}\rule{\linewidth}{0.5pt}\vspace{0.1em}}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\sectionseparator]
+\titlespacing*{\section}{0pt}{0.4em}{0.1em}
+
+% Entry layout macro.
+\newcommand{\entry}[3]{\noindent\textbf{#1} — #2\hfill #3\\}
+
+% Personal details.
+\newcommand{\Name}{Karolis Strazdas}
+\newcommand{\Email}{karolis.strazdas@pm.me}
+\newcommand{\Website}{https://karolis-strazdas.lt}
+\newcommand{\GitHub}{https://github.com/Eoic}
+\newcommand{\LinkedIn}{https://www.linkedin.com/in/karolis-strazdas/}
+
+\begin{document}
+
+\begin{center}
+{\Huge\bfseries \Name}\\[0.2em]
+\small \href{mailto:\Email}{\Email} \quad\textbullet\quad \href{\Website}{karolis-strazdas.lt} \quad\textbullet\quad \href{\GitHub}{github.com/Eoic} \quad\textbullet\quad \href{\LinkedIn}{linkedin.com/in/karolis-strazdas}
+\end{center}
+
+\vspace{0.3em}
+
+\section*{Profile}
+Full-stack software engineer with 5+ years of experience building web applications and machine-learning solutions. I enjoy tackling challenging problems, shipping reliable software, and automating workflows—favoring efficient and maintainable solutions.
+
+\section*{Experience}
+\entry{Indeform Ltd.}{Full-stack developer}{2020-07--Present}
+\vspace{-0.8em}
+\begin{itemize}[leftmargin=*,itemsep=0.08em,topsep=0.02em]
+  \item Web development and graphics programming for a web-based orthopedic product modeling system.
+  \item Built data processing and machine learning solutions using Python, scikit-learn, and TensorFlow.
+  \item Developed and maintained internal software solutions.
+  \item Deployed products and services to on-prem and AWS; created automated deployment pipelines and configurations for Nginx, Docker, Docker Compose, and Jenkins.
+  \item Built interactive wall projection games and tools using OpenCV (C++, Python), Godot, and ImGui.
+  \item Wrote, maintained, and executed manual testing scenarios; created automated tests.
+\end{itemize}
+
+\vspace{0.2em}
+
+\entry{Indeform Ltd.}{Software developer intern}{2020-02--2020-05}
+\vspace{-0.8em}
+\begin{itemize}[leftmargin=*,itemsep=0.08em,topsep=0.02em]
+  \item Performed requirements analysis and system design.
+  \item Designed and developed a debt recovery management system.
+  \item Collaborated with stakeholders on requirements, domain understanding, and project status.
+\end{itemize}
+
+\section*{Education}
+\entry{Kaunas University of Technology}{Bachelor of software engineering}{2016--2020}
+\entry{Kaunas University of Technology}{Master of artificial intelligence in computer science}{2025--2027 (exp.)}
+\vspace{-0.8em}
+
+\section*{Skills}
+\textbf{Programming:} Python, JavaScript/TypeScript, Rust, R, C++.\\
+\textbf{ML/Data:} scikit-learn, TensorFlow, OpenCV.\\
+\textbf{DevOps/Infra:} Docker, Docker Compose, Nginx, Apache, Jenkins, AWS.\\
+\textbf{Tools/Other:} Godot, ImGui.
+
+\section*{Selected projects}
+\begin{itemize}[leftmargin=*,itemsep=0.08em,topsep=0.08em]
+  \item \textbf{Papyrus} — Cross-platform e-book management system.\\\url{https://github.com/Eoic/Papyrus}
+  \item \textbf{Canopy} — Real-time spatial conversation platform.\\\url{https://github.com/Eoic/Canopy}
+  \item \textbf{ASCIIGround} — TypeScript library for animated character backgrounds.\\\url{https://github.com/Eoic/ASCIIGround}
+  \item \textbf{NetBots} — Real-time multiplayer robot programming game.\\\url{https://github.com/Eoic/NetBots}
+  \item More projects: \url{https://karolis-strazdas.lt}
+\end{itemize}
+
+\section*{Languages}
+Lithuanian — Native \;\;|\;\; English — Professional working proficiency
+
+\section*{Interests}
+Reading, cycling, running, personal programming projects, and learning new things in tech and science.
+
+\end{document}
