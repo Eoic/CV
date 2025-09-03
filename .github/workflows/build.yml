@@ -1,4 +1,4 @@
-name: Build CV PDF
+name: Build CV PDFs
 
 on:
   push:
@@ -17,12 +17,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Compile LaTeX
+      
+      - name: Compile Regular CV
         uses: xu-cheng/latex-action@v4
         with:
           root_file: cv.tex
-      - name: Upload PDF artifact
+          
+      - name: Compile Academic CV
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: academic_cv.tex
+          
+      - name: Upload Regular CV
         uses: actions/upload-artifact@v4
         with:
-          name: cv
+          name: cv-regular
           path: cv.pdf
+          
+      - name: Upload Academic CV
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-academic
+          path: academic_cv.pdf
