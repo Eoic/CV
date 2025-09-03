@@ -4,7 +4,7 @@
 \usepackage{lmodern}
 
 % Layout and styling
-\usepackage[margin=1.5cm]{geometry}
+\usepackage[margin=2cm]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{xcolor}
@@ -13,13 +13,13 @@
 
 % Spacing
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.1em}
-\setlist[itemize]{itemsep=0.08em, topsep=0.08em, left=1.2em}
+\setlength{\parskip}{0.15em}
+\setlist[itemize]{itemsep=0.12em, topsep=0.12em, left=1.2em}
 
 % Section styling
-\newcommand{\sectionseparator}{\vspace{-0.5em}\noindent\color{black!20}\rule{\linewidth}{0.5pt}\vspace{0.1em}}
+\newcommand{\sectionseparator}{\vspace{-0.3em}\noindent\color{black!20}\rule{\linewidth}{0.5pt}\vspace{0.2em}}
 \titleformat{\section}{\large\bfseries}{}{0pt}{}[\sectionseparator]
-\titlespacing*{\section}{0pt}{0.4em}{0.1em}
+\titlespacing*{\section}{0pt}{0.6em}{0.2em}
 
 % Entry layout macro
 \newcommand{\entry}[3]{\noindent\textbf{#1} — #2\hfill #3\\}
@@ -35,22 +35,22 @@
 \newcommand{\LinkedIn}{https://www.linkedin.com/in/karolis-strazdas/}
 
 \begin{document}
-\pagestyle{empty}
+\pagestyle{plain}  % Add page numbers for multi-page academic CV
 
 \begin{center}
 {\Huge\bfseries \Name}\\[0.8em]
 {\small \href{mailto:\Email}{\Email}\quad\textbullet\quad \href{\Website}{karolis-strazdas.lt}\quad\textbullet\quad \href{\GitHub}{github.com/Eoic}\quad\textbullet\quad \href{\LinkedIn}{linkedin.com/in/karolis-strazdas}}
 \end{center}
 
-\vspace{-0.7em}
+\vspace{-0.5em}
 
-\begingroup\small
+% Remove the small font group for better readability on 2-page format
 
 \section*{Research interests}
 Machine learning, multivariate time series analysis, sensor-based defect detection, computer vision, and software engineering.
 
 \section*{Education}
-\entry{Kaunas University of Technology}{Master of Artificial Intelligence in Computer Science}{2025 -- 2027 (expected)}
+\entry{Kaunas University of Technology}{Master of Artificial Intelligence in Computer Science}{2025 -- 2027\footnote{Expected completion.}}
 \vspace{-0.8em}
 \begin{itemize}[leftmargin=*, topsep=0em]
   \item Key coursework includes modern AI methods and techniques, machine learning, deep learning, data analysis, cloud computing, project management and computer vision.
@@ -65,7 +65,7 @@ Machine learning, multivariate time series analysis, sensor-based defect detecti
 \end{itemize}
 
 \section*{Research and professional experience}
-\entry{Indeform Ltd., Kaunas}{Software Engineer / Research Associate}{Jul 2020 -- Present}
+\entry{Indeform Ltd.}{Software Engineer / Research Associate}{Jul 2020 -- Present}
 \vspace{-0.8em}
 \begin{itemize}[leftmargin=*, topsep=0em]
   \item Developed machine learning pipelines for wear prediction and defect detection in multivariate time series data from stamping presses (piezoelectric, force, vibration, acoustic emission and displacement sensors). Achieved F1 $\approx$ 0.94, MAE $\approx$ 0.09mm and $R^2$ $\approx$ 0.96; authored a literature review and project reports summarising data processing pipelines, model performance and real-world applicability.
@@ -76,7 +76,7 @@ Machine learning, multivariate time series analysis, sensor-based defect detecti
   \item Contributed to software quality assurance by authoring TestLink scenarios and adding Cypress integration tests for critical workflows.
 \end{itemize}
 
-\entry{Indeform Ltd., Kaunas}{Software Engineer Intern}{Feb 2020 -- May 2020}
+\entry{Indeform Ltd.}{Software Engineer Intern}{Feb 2020 -- May 2020}
 \vspace{-0.8em}
 \begin{itemize}[leftmargin=*, topsep=0em]
   \item Participated in requirements analysis and domain modelling sessions for a debt recovery web application; helped define scope, workflows and success criteria.
@@ -85,7 +85,7 @@ Machine learning, multivariate time series analysis, sensor-based defect detecti
   \item This project served as the basis for the Bachelor's thesis.
 \end{itemize}
 
-\section*{Academic \& open-source projects}
+\section*{Academic and open-source projects}
 \begin{itemize}[leftmargin=*, topsep=0em]
   \item \textbf{TimeLab} -- Local-first tool for labelling multivariate time-series data used in research on sensor-based defect detection. \techstack{TypeScript, SCSS} | \url{https://github.com/Eoic/TimeLab}
   \item \textbf{Papyrus} -- Cross-platform e-book management system for organising digital libraries and synchronising across devices. \techstack{Python, Dart, Flutter, FastAPI, PostgreSQL} | \url{https://github.com/Eoic/Papyrus}
@@ -96,9 +96,9 @@ Machine learning, multivariate time series analysis, sensor-based defect detecti
 
 \section*{Technical skills}
 \textbf{Programming languages}: Python, R, JavaScript/TypeScript, Elixir, Rust.\\
-\textbf{Machine learning \& data analysis}: scikit-learn, TensorFlow, PyTorch, OpenCV.\\
-\textbf{DevOps \& infrastructure}: Docker, Docker Compose, Nginx, Apache, Jenkins, AWS.\\
-\textbf{Frameworks \& tools}: Django, FastAPI, Three.js, Godot, ImGui.
+\textbf{Machine learning and data analysis}: scikit-learn, TensorFlow, PyTorch, OpenCV.\\
+\textbf{DevOps and infrastructure}: Docker, Docker Compose, Nginx, Apache, Jenkins, AWS.\\
+\textbf{Frameworks and tools}: Django, FastAPI, Three.js, Godot, ImGui.
 
 \section*{Languages}
 Lithuanian — native; English — professional working proficiency.
@@ -106,5 +106,4 @@ Lithuanian — native; English — professional working proficiency.
 \section*{Interests}
 Cycling, running, reading, personal programming projects, and continuous learning in technology and science.
 
-\endgroup
 \end{document}
